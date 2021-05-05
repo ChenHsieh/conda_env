@@ -9,7 +9,6 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 syntax on   "开启语法高亮"
 let g:solarized_termcolors=256  "solarized主题设置在终端下的设置"
 set background=dark     "设置背景色"
-colorscheme gruvbox
 "set nowrap  "设置不折行"
 set fileformat=unix "设置以unix的格式保存文件"
 set cindent     "设置C样式的缩进格式"
@@ -54,17 +53,5 @@ map <F10> <leader>ci <CR>
 let g:signify_vcs_list = [ 'git', 'hg' ]
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Yggdroot/indentLine'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tell-k/vim-autopep8'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'mhinz/vim-signify'
-Plugin 'romkatv/powerlevel10k'
-call vundle#end()
 
 filetype plugin indent on
